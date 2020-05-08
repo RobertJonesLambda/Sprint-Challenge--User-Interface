@@ -54,10 +54,35 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
 }
 
+.containerHead {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.lambda {
+    display: flex;
+    align-items: center;
+    padding: 5%;
+    margin: 2%;
+}
+
+nav {
+    font-size: 1.7rem;
+    color: black;
+}
+
+nav a:link {
+    color: black;
+    text-decoration: none;
+}
+
+
+
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -69,6 +94,15 @@ p {
 .container {
     width: 800px;
     margin: 0 auto;
+}
+
+.topImage {
+    display: flex;
+    justify-content: center;
+}
+
+.text-container {
+    font-size: 1.4rem;
 }
 
 .top-content {
@@ -137,7 +171,7 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
