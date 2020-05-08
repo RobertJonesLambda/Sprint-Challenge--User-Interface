@@ -57,7 +57,7 @@ html, body {
     font-size: 62.5%;
 }
 
-
+/* Header styling*/
 
 .containerHead {
     display: flex;
@@ -75,17 +75,18 @@ html, body {
     justify-content: center;
     align-items: center;
 }
-
+/* Top image*/
 .topImage {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 2%;
     margin: 1%;
+    width: 100%;
     
 }
 
-
+/*lambda logo*/
 .lambda {
     display: flex;
     align-items: center;
@@ -93,7 +94,7 @@ html, body {
     padding: 1% 1% 0% 0%;
     margin: 1% 1% 0% 0%;
 }
-
+/* Top nav controls*/
 .nav {
     display: flex;
     justify-content: flex-end;
@@ -112,12 +113,8 @@ nav {
     font-size: 1.5rem;
     color: black;
     text-decoration: none;
-
-
 }
-
-
-
+/* text body*/
 h1, h2, h3, h4, h5 {
     font-size: 1.8rem;
     margin-bottom: 15px;
@@ -145,7 +142,7 @@ p {
     padding: 0 1%;
     padding-bottom: 20px;  
 }
-
+/* Middle */
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
@@ -155,7 +152,7 @@ p {
     padding: 0 2%;
     margin-bottom: 0;
 }
-
+/* Dreaded Boxes of doom*/
 .middle-content .boxes {
     display: flex;
     flex-wrap: wrap;
@@ -171,8 +168,9 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 1.2rem;
 }
-
+/* bottom paragraphs*/
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -186,12 +184,12 @@ p {
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
-
+/* footer styling*/
 footer {
     width: 100%;
     background: black;
 }
-
+/* bottom nav*/
 footer nav {
     width: 60%;
     display: flex;
