@@ -57,21 +57,53 @@ html, body {
     font-size: 62.5%;
 }
 
+
+
 .containerHead {
-    width: 800px;
+    display: flex;
+    width: 57%;
     margin: 0 auto;
 }
+
+.container {
+    width: 57%;
+    margin: 0 auto;
+}
+
+.container .topImage {
+    
+    
+}
+
+.topImage img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
+
 
 .lambda {
     display: flex;
     align-items: center;
-    padding: 5%;
-    margin: 2%;
+    justify-content: start;
+    padding: 1% 1% 0% 0%;
+    margin: 1% 1% 0% 0%;
 }
+
+.containerHead nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    justify-content: center;
+}
+
+
 
 nav {
     font-size: 1.7rem;
     color: black;
+
 }
 
 nav a:link {
@@ -89,16 +121,6 @@ h1, h2, h3, h4, h5 {
 
 p {
     line-height: 1.4;
-}
-
-.container {
-    width: 800px;
-    margin: 0 auto;
-}
-
-.topImage {
-    display: flex;
-    justify-content: center;
 }
 
 .text-container {
