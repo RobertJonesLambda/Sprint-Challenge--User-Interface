@@ -71,15 +71,18 @@ html, body {
 }
 
 .container .topImage {
-    
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.topImage img {
+.topImage {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 2%;
+    margin: 1%;
+    
 }
 
 
@@ -91,24 +94,26 @@ html, body {
     margin: 1% 1% 0% 0%;
 }
 
-.containerHead nav {
+.nav {
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    justify-content: center;
+    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-grow: 2;
+    text-decoration: none;
 }
 
-
+#home, #about, #products, #blog, #contact {
+    text-decoration: none;
+    padding-left: 2%;
+}
 
 nav {
-    font-size: 1.7rem;
-    color: black;
-
-}
-
-nav a:link {
+    font-size: 1.5rem;
     color: black;
     text-decoration: none;
+
+
 }
 
 
