@@ -127,6 +127,7 @@ h1, h2, h3, h4, h5 {
 
 p {
     line-height: 1.4;
+    font-size: 1.5rem;
 }
 
 .text-container1, .text-container2 {
@@ -143,7 +144,6 @@ p {
 
 .top-content .text-container1, .text-container2 {
     width: 48%;
-    padding: 0 1%;
     padding-bottom: 20px;  
 }
 /* Middle */
@@ -292,29 +292,79 @@ footer nav a {
         text-decoration: none;
     }
 
-    #home,
-    #about,
-    #products,
-    #blog,
-    #contact {
+    #home, #about, #products, #blog, #contact {
         text-decoration: none;
         padding-left: 2%;
         padding-bottom: 1%;
     }
     
-    .top-content, .text-container2 {
+    .top-content {
         display: flex;
         flex-direction: column;
-        width: 100%;
     }
 
-    .text-container1 {
-        width: 100%;
+    .text-container1, .text-container2 {
+         width: 100%;
+         min-width: 99%;
+         padding: 1%;
+         padding-bottom: 20px;
+     }
+
+    .middle-content {
+        margin-bottom: 20px;
+        border-bottom: 1px dashed black;
     }
+
+    .middle-content, .boxes {
+         display: flex;
+         flex-flow: row-wrap;
+         max-height: 60%;
+
+    }
+
+    .middle-content h2 {
+        max-height: 4%;
+        padding: 0 2%;
+        padding-right: 20%;
+        margin-bottom: 0;
+    }
+
+    .why {
+        max-height: 10%;
+    }
+  
+   
         
 }
 
 @media (max-width: 500px) {
 
-    .top-content
+    .container {
+         width: 100%;
+         margin: 0 auto;
+     }
+
+    .lambda, .nav {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+     }
+    
+    .topImage {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+    }
+
+    .middle-content h2 {
+        flex-basis: content;
+        flex-shrink: inherit;
+    }
+
+    .middle-content .boxes {
+         display: flex;
+         flex-direction: column;
+         justify-content: space-evenly;
+         width: 50%;
+     }
 }
