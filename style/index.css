@@ -322,17 +322,11 @@ footer nav a {
        align-content: center;
      }
 
-     .box1,
-     .box2,
-     .box3,
-     .box4,
-     .box5,
-     .box6,
-     .box7,
+     .box1, .box2, .box3, .box4, .box5, .box6, .box7,
      .box8,
      .box9,
      .box10 {
-        margin: 60px;
+        margin: 30px;
         width: 32.5%;
         height: 240px;
      }
@@ -360,16 +354,21 @@ footer nav a {
          margin: 0 auto;
      }
 
-    .lambda, .nav {
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-     }
+    .containerHead {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lambda {
+        justify-content: center;
+        padding: 2%;
+
+    }
     
-    .topImage {
-         display: flex;
-         justify-content: center;
-         align-items: center;
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        
     }
 
     .middle-content h2 {
@@ -377,20 +376,56 @@ footer nav a {
         flex-shrink: inherit;
     }
 
-    .middle-content .boxes .box, .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10 {
-        width: 12.5%;
-        height: 100px;
-        margin: 20px 2.5%;
-        color: white;
-        display: flex;
-        /* flex-direction: column; */
-        align-items: center;
-        justify-content: center;
-        font-size: 1.2rem;
-    }    
+      .boxes {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-content: center;
+      }
 
-    .boxes {
-       display: flex;
-       flex-wrap: wrap;
-       flex-direction: column;
-       justify-content: space-evenly;
+      .box1,
+      .box2,
+      .box3,
+      .box4,
+      .box5,
+      .box6,
+      .box7,
+      .box8,
+      .box9,
+      .box10 {
+          margin: 60px;
+          width: 40%;
+          height: 200px;
+      }
+
+      .bottom-content {
+          display: flex;
+          flex-direction: column;
+          padding: 2%;
+      }
+
+      .text-container {
+          padding: 2%;
+      }
+      
+      
+      
+      footer {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+      }
+      
+      footer nav {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 30%;
+          padding: 20px 2%;
+      }
+
+
+
+     
