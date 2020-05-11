@@ -157,7 +157,7 @@ p {
     margin-bottom: 0;
 }
 /* Dreaded Boxes of doom*/
-.middle-content .boxes {
+.boxes {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -250,7 +250,7 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
-
+/* Styling for tablet */
 @media (max-width: 800px) {
 
     .container {
@@ -309,18 +309,34 @@ footer nav a {
          padding: 1%;
          padding-bottom: 20px;
      }
-
+    /* Middle text  */
     .middle-content {
         margin-bottom: 20px;
         border-bottom: 1px dashed black;
     }
+    /* Box styling for tablet */
+   .boxes {
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       align-content: center;
+     }
 
-    .middle-content, .boxes {
-         display: flex;
-         flex-flow: row-wrap;
-         max-height: 60%;
+     .box1,
+     .box2,
+     .box3,
+     .box4,
+     .box5,
+     .box6,
+     .box7,
+     .box8,
+     .box9,
+     .box10 {
+        margin: 60px;
+        width: 32.5%;
+        height: 240px;
+     }
 
-    }
 
     .middle-content h2 {
         max-height: 4%;
@@ -361,10 +377,20 @@ footer nav a {
         flex-shrink: inherit;
     }
 
-    .middle-content .boxes {
-         display: flex;
-         flex-direction: column;
-         justify-content: space-evenly;
-         width: 50%;
-     }
-}
+    .middle-content .boxes .box, .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10 {
+        width: 12.5%;
+        height: 100px;
+        margin: 20px 2.5%;
+        color: white;
+        display: flex;
+        /* flex-direction: column; */
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+    }    
+
+    .boxes {
+       display: flex;
+       flex-wrap: wrap;
+       flex-direction: column;
+       justify-content: space-evenly;
